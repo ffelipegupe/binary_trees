@@ -1,5 +1,6 @@
 #include "binary_tress.h"
-/** binary_tree_insert - function that inserts a node as the other's left-child
+/**
+ * binary_tree_insert_left - inserts a node as the other's left-child
  * @parent: pointer to the node to insert the left-child in
  * @value: value to store in the new node
  *
@@ -16,11 +17,11 @@ binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 		return (NULL);
 	new_node->parent = parent;
 	new_node->n = value;
-	new_node-right = NULL;
+	new_node->right = NULL;
 	if (parent->left)
 	{
 		new_node->left = parent->left;
-		parent-left->parent = new_node;
+		parent->left->parent = new_node;
 	}
 	else
 		new_node->left = NULL;
