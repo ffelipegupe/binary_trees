@@ -1,4 +1,4 @@
-#include "binary_tress.h"
+#include "binary_trees.h"
 /**
  * binary_tree_insert_left - inserts a node as the other's left-child
  * @parent: pointer to the node to insert the left-child in
