@@ -6,7 +6,7 @@
  *
  * Return: 1, if node is a lead; 0, otherwise or if node equals NULL
  */
-int binary_tree_is_preorder(const binary_tree_t *tree, void (*func)(int))
+int binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
 {
 	if (!tree || !func)
 		return;
