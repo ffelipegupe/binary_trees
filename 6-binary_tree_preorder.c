@@ -4,9 +4,9 @@
  * @tree: pointer to the root node of the tree to delete
  * @func: pointer to a function to call for each node
  *
- * Return: 1, if node is a lead; 0, otherwise or if node equals NULL
+ * Return: nothing
  */
-int binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
+void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
 {
 	if (!tree || !func)
 		return;
